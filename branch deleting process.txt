@@ -1,0 +1,7 @@
+created branch with name of newbranch
+created some files in newbranch
+and merge with master branch and given one commit
+after that i deletd the branch 
+but branch is deleted but files and not deleted from github. and local repository.
+
+

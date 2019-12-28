@@ -1,0 +1,16 @@
+if you have changed any modification in file the you need to go to git bash 
+and type git pull
+
+command 
+first go to git bash
+then type git pull
+
+===================================
+
+when ever you commit any file in git bash 
+need to run this command 
+git push -u origin master
+it ask for username and password 
+enter the username and password 
+it will update on github server
+===============================================

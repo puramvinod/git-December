@@ -1,0 +1,9 @@
+Git squash
+
+taken 4 commit and i rebase it but using this command 
+git rebase -i HEAD~4
+
+
+note: now i want to add some more commit to squash 
+how to do it 
+

@@ -1,0 +1,84 @@
+Git 2nd class notes
+
+Git when working on the local machine uses three sections
+1. working directory or workspace
+2. Stagging Area
+3. Local Repository
+
+Working dir is the physical folder where the developers 
+create all the code and initially all the files present here are called untracked file.
+
+Stagging Area is the intermediate buffer zone into which files are 
+moved and these files are called as stagged files.
+
+Local Repository if the location where version controlling happens
+and the files present here are called commited files.
+
+1. To  initilise the current folder as a git repository the command we give is 
+git init
+
+2. To send a file from working dir to stagging area 
+git add filename
+
+3. to send multiple files to stagging area
+git add file1 file2 file3
+
+4. to send all the files and folders into the stagging area
+git add .
+
+Note:  .represents current working directory
+
+5. To send filefrom stagging area back to working directory 
+git rm --cached filename
+
+ or
+git reset filename
+
+6. To send files from stagging area to the local repository 
+git commit -m "some message"
+
+7. To see the info about files present in working dir and stagging area
+git status
+
+8. To see the list of commits that are done in the local repository
+git log 
+
+9. To see the commit inof in one line format
+git  log --oneline
+
+Note: git commit will move all the files from stagging to local repository
+To move only specific files from stagging to local repository
+git commit -m "fourth commit" filename
+
+example :- git commit -m "fourth commit" file4
+
+
+.gitignore
+============
+
+This is a special configuration file where we can store private files
+info. any file whose name is mentioned in .gitignore will no longer
+be accessed by git 
+
+1. Create few file
+touch f1 f2 f3 f4 f5
+
+2. check the status of git
+git status
+
+it will show the above files as untracked
+
+3. create a file called .gitignore and store the private filesin it
+cat > .gitignore
+f1
+f2
+f3
+f4
+f5
+to come out of cat command Ctrl+d
+
+4. check the status of git
+git status
+
+it will no longer show the above four files as untracked.only
+.gitignore will be shown in the untracked section 
